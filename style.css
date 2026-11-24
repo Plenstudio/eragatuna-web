@@ -1,0 +1,32 @@
+:root{--bg:#fff3d8;--bg2:#ffdfa6;--ink:#5a3a20;--card:#fffaf0;--accent:#e8892b;--accent-d:#b9651a;--line:#e6c98f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:linear-gradient(var(--bg),var(--bg2)) fixed;line-height:1.6}
+a{color:var(--accent-d)}
+header,main,footer{max-width:880px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:18px;padding-bottom:6px;flex-wrap:wrap}
+header .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;text-decoration:none;color:var(--ink)}
+header .brand img{width:40px;height:40px;border-radius:10px}
+nav a{margin-left:14px;text-decoration:none;font-weight:600}
+.hero{text-align:center;padding:28px 0 8px}
+.hero img.icon{width:132px;height:132px;border-radius:30px;box-shadow:0 8px 24px rgba(120,60,10,.25)}
+h1{font-size:clamp(2rem,6vw,3rem);margin:.4em 0 .1em}
+h2{margin-top:1.8em}
+.tag{font-size:1.15rem;opacity:.85;margin:0 0 18px}
+.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:12px 24px;border-radius:14px;text-decoration:none;box-shadow:0 4px 0 var(--accent-d)}
+.btn.off{background:#b9a98e;box-shadow:0 4px 0 #8d7f68;pointer-events:none}
+.card{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px 22px;margin:18px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.grid .card{margin:0}
+.feature{width:100%;border-radius:18px;border:2px solid var(--line);margin:18px 0}
+.shots{display:flex;gap:12px;overflow-x:auto;padding-bottom:10px}
+.shots img{height:420px;border-radius:14px;border:2px solid var(--line)}
+.studios{display:flex;gap:26px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px 0}
+.studios img{height:56px}
+.studios .b87{height:64px;border-radius:14px}
+footer{padding:28px 20px 40px;text-align:center;font-size:.92rem;opacity:.85}
+[lang="en"]:not(html){display:none}
+html.en [lang="es"]:not(html){display:none}
+html.en [lang="en"]:not(html){display:revert}
+.lang{border:2px solid var(--line);background:var(--card);border-radius:10px;padding:4px 10px;font-weight:700;color:var(--ink);cursor:pointer;margin-left:14px}
+ul{padding-left:1.2em}
